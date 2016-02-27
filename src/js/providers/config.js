@@ -3,21 +3,21 @@
     angular.module('FileManagerApp').provider('fileManagerConfig', function() {
 
         var values = {
-            appName: 'https://github.com/joni2back/angular-filemanager',
+            appName: '',
             defaultLang: 'en',
 
-            listUrl: 'bridges/php/handler.php',
-            uploadUrl: 'bridges/php/handler.php',
-            renameUrl: 'bridges/php/handler.php',
-            copyUrl: 'bridges/php/handler.php',
-            removeUrl: 'bridges/php/handler.php',
-            editUrl: 'bridges/php/handler.php',
-            getContentUrl: 'bridges/php/handler.php',
-            createFolderUrl: 'bridges/php/handler.php',
+            listUrl: '/api/list',
+            uploadUrl: '/api/upload',
+            renameUrl: '/api/rename',
+            copyUrl: '/api/copy',
+            removeUrl: '/api/remove',
+            editUrl: '/api/edit',
+            getContentUrl: '/api/content',
+            createFolderUrl: '/api/create',
             downloadFileUrl: 'bridges/php/handler.php',
             compressUrl: 'bridges/php/handler.php',
             extractUrl: 'bridges/php/handler.php',
-            permissionsUrl: 'bridges/php/handler.php',
+            permissionsUrl: '/bridges/handler',
 
             searchForm: true,
             sidebar: true,

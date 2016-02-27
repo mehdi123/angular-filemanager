@@ -36,11 +36,10 @@
             var self = this;
             var deferred = $q.defer();
             var path = self.currentPath.join('/');
-            var data = {params: {
-                mode: 'list',
+            var data = {
                 onlyFolders: false,
                 path: '/' + path
-            }};
+            };
 
             self.requesting = true;
             self.fileList = [];

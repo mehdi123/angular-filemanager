@@ -64,11 +64,10 @@
         Item.prototype.createFolder = function() {
             var self = this;
             var deferred = $q.defer();
-            var data = {params: {
-                mode: 'addfolder',
+            var data = {
                 path: self.tempModel.path.join('/'),
                 name: self.tempModel.name
-            }};
+            };
 
             self.inprocess = true;
             self.error = '';
@@ -86,11 +85,10 @@
         Item.prototype.rename = function() {
             var self = this;
             var deferred = $q.defer();
-            var data = {params: {
-                mode: 'rename',
+            var data = {
                 path: self.model.fullPath(),
                 newPath: self.tempModel.fullPath()
-            }};
+            };
             self.inprocess = true;
             self.error = '';
             $http.post(fileManagerConfig.renameUrl, data).success(function(data) {
@@ -106,11 +104,10 @@
         Item.prototype.copy = function() {
             var self = this;
             var deferred = $q.defer();
-            var data = {params: {
-                mode: 'copy',
+            var data = {
                 path: self.model.fullPath(),
                 newPath: self.tempModel.fullPath()
-            }};
+            };
 
             self.inprocess = true;
             self.error = '';
@@ -186,10 +183,9 @@
         Item.prototype.getContent = function() {
             var self = this;
             var deferred = $q.defer();
-            var data = {params: {
-                mode: 'editfile',
+            var data = {
                 path: self.tempModel.fullPath()
-            }};
+            };
 
             self.inprocess = true;
             self.error = '';
@@ -207,10 +203,9 @@
         Item.prototype.remove = function() {
             var self = this;
             var deferred = $q.defer();
-            var data = {params: {
-                mode: 'delete',
-                path: self.tempModel.fullPath()
-            }};
+            var data = {
+              path: self.tempModel.fullPath()
+            };
 
             self.inprocess = true;
             self.error = '';
