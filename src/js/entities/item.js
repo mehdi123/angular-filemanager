@@ -167,7 +167,6 @@
         Item.prototype.getUrl = function(preview) {
             var path = this.model.fullPath();
             var data = {
-                mode: 'download',
                 preview: preview,
                 path: path
             };

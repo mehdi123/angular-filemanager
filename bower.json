@@ -1,9 +1,9 @@
 {
-  "name": "angular-filemanager",
+  "name": "angular-filemanager-wysiwys",
   "version": "1.4.8",
-  "homepage": "https://github.com/joni2back/angular-filemanager",
+  "homepage": "https://github.com/mehdi123/angular-filemanager",
   "authors": [
-    "Jonas Sciangula Street <joni2back@gmail.com>"
+    "Cloned and adapted by Mehdi Ahmadi <mehdi.ai@gmail.com>"
   ],
   "description": "A very smart filemanager to manage your files in the browser.",
   "main": "js/app.js",
@@ -24,5 +24,6 @@
     "bootstrap": "~3.3.2",
     "jquery": "~2.2.0",
     "bootswatch": "3.3.6+1"
-  }
+  },
+  "moduleType": []
 }
